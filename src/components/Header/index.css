@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #060606;
+    color: white;
+    border-top-right-radius: 8px;
+
+  }
+  
+  .header-title {
+    font-size: 18px;
+  }
+  
+  .header-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-option {
+    cursor: pointer;
+  }
+  
+  .header-settings img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+  }

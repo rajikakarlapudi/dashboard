@@ -1,0 +1,219 @@
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 70px;
+    color:white;
+    border-bottom: 2px solid black;
+    margin: 0px;
+
+    width: 87vw;
+  }
+  
+  .chat-header-buttons button {
+    margin-left: 10px;
+  }
+  
+ 
+  .middle-container{
+    display: flex;
+  }
+
+  .chat-interface {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-right: 2px solid black;
+  }
+  
+  .header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    background-color: transparent;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  
+  .model-select {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .compare-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .system-message {
+    padding: 20px;
+    align-self: center;
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+  }
+  
+  .system-message p {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .system-message input {
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .user-message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: auto;
+    padding: 20px;
+    align-self: center;
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+
+  }
+  
+  .user-message input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    color: #fff;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-button,
+  .add-button,
+  .run-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .run-button {
+    display: flex;
+    align-items: center;
+  }
+  .functions-panel {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+  }
+  
+  .functions-panel h2 {
+    margin-top: 0;
+  }
+  
+  .add-function-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .slider {
+    margin-bottom: 20px;
+  }
+  
+  .slider label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .slider input[type="range"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .slider .value {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  .info {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .info a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .info a:hover {
+    text-decoration: underline;
+  }
+  
