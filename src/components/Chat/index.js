@@ -27,10 +27,12 @@ const Chat = () => {
     { category: 'Technical', exams: ['C','Python','Java','C++'] },
     { category: 'Others', exams: ['Exam-1','Exam-2','Exam-3','Exam-4'] },
   ]);
+
   const [showModal, setShowModal] = useState(false);
   const [newItem, setNewItem] = useState({ category: initialCategories[0], name: '' });
   const [selectedExam, setSelectedExam] = useState(null);
   const [subjects, setSubjects] = useState({});
+  const [error, setError] = useState('');
 
   const openModal = () => {
     setShowModal(true);
@@ -39,14 +41,23 @@ const Chat = () => {
   const closeModal = () => {
     setShowModal(false);
     setNewItem({ category: initialCategories[0], name: '' });
+    setError('');
   };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewItem({ ...newItem, [name]: value });
+    if (name === 'name' && value !== '') {
+      setError('');
+    }
   };
 
   const addItem = () => {
+    if (newItem.name.trim() === '') {
+      setError('Name cannot be empty');
+      return;
+    }
+
     if (selectedExam) {
       setSubjects((prevSubjects) => {
         const updatedSubjects = { ...prevSubjects };
@@ -146,6 +157,7 @@ const Chat = () => {
               placeholder="Name"
               className="modal-input"
             />
+            {error && <p className="error-message">{error}</p>}
             <div className="modal-buttons">
               <button onClick={closeModal}>Cancel</button>
               <button onClick={addItem}>Save</button>

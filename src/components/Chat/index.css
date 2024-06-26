@@ -37,7 +37,6 @@ body {
   background-color: #222;
   padding: 20px;
   border-radius: 8px;
-  
 }
 
 .chat-interface .header {
@@ -111,6 +110,11 @@ body {
   border-radius: 4px;
   color: white;
   padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
   margin-bottom: 10px;
 }
 
