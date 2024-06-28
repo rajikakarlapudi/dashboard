@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top {
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.chat-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.chat-header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chat-header-buttons button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.chat-header-buttons button:hover {
+  background-color: #666;
+}
+
+.chat {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chat-interface .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.add-exam {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-exam:hover {
+  background-color: #666;
+}
+
+.exam-group {
+  margin-bottom: 20px;
+}
+
+.exam-group h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.exam-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.exam-card {
+  background-color: #444;
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.exam-card:hover {
+  background-color: #555;
+}
+
+.subject-view {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-dataset {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-dataset:hover {
+  background-color: #666;
+}
+
+.dataset-card {
+  background-color: #444;
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.dataset-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dataset-actions button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.dataset-actions button:hover {
+  background-color: #666;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.modal-input {
+  background: #444;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-buttons button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.modal-buttons button:hover {
+  background-color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .chat-header-buttons {
+    justify-content: center;
+  }
+  
+  .add-exam {
+    margin-bottom: 10px;
+  }
+  
+  .exam-cards {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-header-buttons {
+    flex-direction: column;
+  }
+  
+  .exam-cards {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display:flex ;
+    flex-direction: column;
+  }
+}
